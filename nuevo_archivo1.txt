@@ -1,0 +1,102 @@
+Last login: Thu Mar  9 15:26:43 on ttys000
+andreinazevalloslopez@MacBook-Pro-de-Andreina ~ % cd entorno_desarrollo
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % ls  
+README.md		index.html		nuevo.txt		nuevo_archivo.txt
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git checkout examen
+Ya en 'examen'
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % ls
+README.md		index.html		nuevo.txt		nuevo_archivo.txt
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git checkout entorno_desarollo
+error: ruta especificada 'entorno_desarollo' no concordó con ningún archivo conocido por git
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % cd entorno_desarrollo
+cd: no such file or directory: entorno_desarrollo
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git merge 
+fatal: No hay remoto para la rama actual.
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git -d nuevo_archivo.txt
+opción -d desconocida
+uso: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git branch -d nuevo_archivo.txt 
+error: rama 'nuevo_archivo.txt' no encontrada.
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git branch -d examen
+error: No se puede borrar rama 'examen' que cuenta con checkout en '/Users/andreinazevalloslopez/entorno_desarrollo'
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git checkout examen
+Ya en 'examen'
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git checkout entorno_desarrollo
+error: ruta especificada 'entorno_desarrollo' no concordó con ningún archivo conocido por git
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git checkout master
+error: ruta especificada 'master' no concordó con ningún archivo conocido por git
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git commit
+En la rama examen
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	nuevo_archivo.txt
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git add <nuevo.archivo.txt> 
+zsh: parse error near `\n'
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git commit -m "esto es un ejemplo"
+En la rama examen
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	nuevo_archivo.txt
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git add
+Nada especificado, nada agregado.
+ayuda: ¿Tal vez quisiste decir 'git add .'?
+ayuda: Desactiva este mensage ejecutando
+ayuda: "git config advice.addEmptyPathspec false"
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git add . 
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git checkout examen 
+A	nuevo_archivo.txt
+Ya en 'examen'
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % nuevo_archivo.txt
+zsh: command not found: nuevo_archivo.txt
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % nuevo_archivo.txt_archivo.txt
+zsh: command not found: nuevo_archivo.txt_archivo.txt
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git add nuevo_archivo.txt
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % cd entorno_desarrollo
+cd: no such file or directory: entorno_desarrollo
+andreinazevalloslopez@MacBook-Pro-de-Andreina entorno_desarrollo % git commit
+ayuda: Esperando que tu editor cierre el archivo ... 
+
+# Por favor ingresa el mensaje del commit para tus cambios. Las
+#  líneas que comiencen con '#' serán ignoradas, y un mensaje
+#  vacío aborta el commit.
+#
+# En la rama examen
+# Cambios a ser confirmados:
+#       nuevos archivos: nuevo_archivo.txt
+# 
+esto es un ejemplo de examen 
+
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+-- INSERT --
